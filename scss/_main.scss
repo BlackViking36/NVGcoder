@@ -1,0 +1,127 @@
+.container1 {
+
+    .navMain {
+
+        .navMain__div{
+            
+            .navMain__img {
+                width: 50px;
+                border-radius: 4px;
+            }
+
+            .span__a {
+                background-color: #eb2f06;
+                border-radius: 4px;
+            }
+
+            .navMain__a {
+                color: #eb2f06;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                .nav-link {
+                    color: #eb2f06;
+                }
+
+                &:hover {
+                    border-bottom: 3px solid #eb2f06;
+                }
+            }
+        }
+    }
+}
+
+
+.paymentMethod {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+    .paymentMethod__p{
+        position: relative;
+        display: inline-block;
+        padding: 15px 30px;
+        color: #2196f3;
+        text-transform: uppercase;
+        font-size: 2em;
+        overflow: hidden;
+        transition: .2s;
+
+        &:hover {
+            color: #1a466b;
+            background: #4cd137;
+            box-shadow: 0 0 10px #4cd137 0 0 40px #4cd137 0 0 80px #4cd137;
+            transition-delay: .2s;
+            border-radius:  6px;
+        }
+    }
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    margin-top: 5%;
+
+    .container2 {
+        position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        font-weight: bolder;
+
+        .card {
+            position: relative;
+            max-width: 300px;
+            height: 200px;
+            background: #34495e;
+            margin: 30px 10px;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            /* box-shadow: 0 5px 20px rgba(0,0,0,0.5); */
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                height: 260px;
+
+                .content {
+                    visibility: visible;
+                    opacity: 1;
+                    margin-top: -40px;
+                    transition-delay: 0.3s;
+                }
+            }
+
+            .imgbx {
+                position: relative;
+                width: 260px;
+                height: 140px;
+                top: -60px;
+                left: 20px;
+                z-index: 1;
+
+                img {
+                    max-width: 90%;
+                    border-radius: 4px;
+                }
+            }
+
+            .content {
+                position: relative;
+                margin-top:  -140px;
+                padding: 10px 15px;
+                text-align: center;
+                color: #111;
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
