@@ -1,8 +1,42 @@
+.redes {
+    width: 100%;
+    background:$colorbgf;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20vh 0 0 0;
+
+    @mixin redes ($margin,$colorbg) {
+        margin: $margin;
+        color: $colorbg;
+    }
+
+    .facebook {
+        @include redes ($margin,$colorbg)
+    }
+
+    .instagram {
+        @include redes ($margin,$colorbg)
+    }
+
+    .twitter {
+        @include redes ($margin,$colorbg)
+    }
+
+    .whatsapp {
+        @include redes ($margin,$colorbg)
+    }
+
+    .discord {
+        @include redes ($marginr,$colorbg)
+    }
+}
+
 #foot-n {
     text-align: center;
     padding-top: 4rem;
-    font-family: monospace;
+    font-family: 'Orbitron', sans-serif;
     font-size: 12px;
-    color: #eb2f06;
+    color: text;
     margin-bottom: 4rem;
 }

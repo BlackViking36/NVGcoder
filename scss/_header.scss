@@ -1,7 +1,33 @@
-.header__h1 {
-    letter-spacing: 5px;
-    text-align: center;
-    font-size: 4rem;
-    color: #eb2f06;
-    position: relative;
+.container1 {
+
+    .navMain {
+
+        .navMain__div{
+            
+            .navMain__img {
+                width: 50px;
+                border-radius: 4px;
+            }
+
+            .span__a {
+                padding: 4px;
+                background-color: #ff0000;
+                border-radius: 4px;
+            }
+
+            .navMain__a {
+                color: #ff0000;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                .nav-link {
+                    color: #ff0000;
+                }
+
+                &:hover {
+                    border-bottom: 3px solid #ff0000;
+                }
+            }
+        }
+    }
 }
