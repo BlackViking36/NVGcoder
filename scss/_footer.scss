@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20vh 0 0 0;
+    margin: 15vh 0 0 0;
 
     @mixin redes ($margin,$colorbg) {
         margin: $margin;
@@ -32,6 +32,24 @@
     }
 }
 
+.formmulario__footer {
+    margin-top: 10vh;
+    
+    form {
+        margin-left: 10vh;
+        width: 50%;
+
+        label {
+            color: $colorbgf;
+        }
+
+        .btn {
+            background: $colorbgf;
+            color: $colorbg;
+        }
+    }
+}
+
 #foot-n {
     text-align: center;
     padding-top: 4rem;
@@ -39,4 +57,25 @@
     font-size: 12px;
     color: text;
     margin-bottom: 4rem;
+}
+
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+    
+    & .btn-wsp:hover {
+    background: #20ba5a;
+    }
 }
