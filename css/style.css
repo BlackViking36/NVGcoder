@@ -27,10 +27,18 @@ body {
   .container1 .navMain .navMain__div .navMain__a:hover {
     border-bottom: 3px solid #ff0000; }
 
-.destacados {
+.titulos {
   text-align: center;
   padding-top: 10vh;
   letter-spacing: 10px; }
+
+.main-pagos .main-pagos__p {
+  text-align: center;
+  padding-top: 40px; }
+
+.main-pagos .main-pagos__img {
+  border-radius: 4px;
+  margin: 10vh 0 10vh 40vw; }
 
 .boxes {
   display: flex;
@@ -85,6 +93,55 @@ body {
         visibility: hidden;
         opacity: 0;
         transition: 0.3s ease-in-out; }
+
+.prod__cont h2 {
+  color: #000000;
+  background: #ff0000; }
+
+.prod__cont img {
+  width: 50%; }
+
+.prod__cont .prod__pcs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10vh 0 10vh 0; }
+  .prod__cont .prod__pcs .box__prod {
+    box-sizing: border-box;
+    padding: 30px; }
+    .prod__cont .prod__pcs .box__prod img {
+      display: block;
+      margin: auto; }
+    .prod__cont .prod__pcs .box__prod p {
+      text-align: center; }
+
+.prod__cont .prod__note {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10vh 0 10vh 0; }
+  .prod__cont .prod__note .box__prod {
+    box-sizing: border-box;
+    padding: 30px; }
+    .prod__cont .prod__note .box__prod img {
+      display: block;
+      margin: auto; }
+    .prod__cont .prod__note .box__prod p {
+      text-align: center; }
+
+.prod__cont .prod__acc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10vh 0 10vh 0; }
+  .prod__cont .prod__acc .box__prod {
+    box-sizing: border-box;
+    padding: 30px; }
+    .prod__cont .prod__acc .box__prod img {
+      display: block;
+      margin: auto; }
+    .prod__cont .prod__acc .box__prod p {
+      text-align: center; }
 
 .redes {
   width: 100%;

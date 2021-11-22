@@ -1,7 +1,20 @@
-.destacados {
+.titulos {
     text-align: center;
     padding-top: 10vh;
     letter-spacing: 10px;
+}
+
+.main-pagos {
+
+    .main-pagos__p {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .main-pagos__img {
+        border-radius: 4px;
+        margin: 10vh 0 10vh 40vw;
+    }
 }
 
 .boxes {
@@ -70,5 +83,65 @@
                 transition: 0.3s ease-in-out;
             }
         }
+    }
+}
+
+.prod__cont {
+
+    h2 {
+        color: $colorbg;
+        background: $colorbgf;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    @mixin prod {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10vh 0 10vh 0;
+    }
+
+    @mixin box {
+        box-sizing: border-box;
+        padding: 30px;
+        
+        img {
+            display:block;
+            margin:auto;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .prod__pcs {
+
+        .box__prod {
+            @include box()
+        }
+
+        @include prod()
+    }
+
+    .prod__note {
+
+        .box__prod {
+            @include box()
+        }
+
+        @include prod()
+    }
+
+    .prod__acc {
+
+        .box__prod {
+            @include box()
+        }
+
+        @include prod()
     }
 }
